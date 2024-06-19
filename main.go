@@ -84,7 +84,7 @@ func (r Running) Calories() float64 {
 }
 
 func (r Running) TrainingInfo() InfoMessage {
-	return r.TrainingInfo()
+	return r.Training.TrainingInfo()
 }
 
 const (
@@ -104,7 +104,7 @@ func (w Walking) Calories() float64 {
 }
 
 func (w Walking) TrainingInfo() InfoMessage {
-	return w.TrainingInfo()
+	return w.Training.TrainingInfo()
 }
 
 const (
