@@ -27,7 +27,7 @@ func (t Training) distance() float64 {
 
 func (t Training) meanSpeed() float64 {
 	if t.Duration != 0 {
-		return float64(t.Action) * t.LenStep / MInKm / (t.Duration)
+		return float64(t.Action) * t.LenStep / MInKm / float64(t.Duration)
 	}
 	return 0
 }
